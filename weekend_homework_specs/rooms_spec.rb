@@ -31,5 +31,14 @@ class RoomsTest < MiniTest::Test
     assert_equal(3, @songs.count)
   end
 
+  def test_room_capacity()
+    @room1.room_capacity(@guest) > 5
+    @room2 << %
+    assert_equal(0, @room2.guest.length)
+  end
+
 
 end
+
+
+

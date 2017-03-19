@@ -20,5 +20,10 @@ class Room
     @songs << song
   end
 
+  def room_capacity(guest)
+    @room2 << guest
+  end
+
 
 end
+
